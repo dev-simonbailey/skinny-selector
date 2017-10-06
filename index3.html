@@ -4,6 +4,7 @@
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" id="skinnys-fontawesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.8.2" type="text/css" media="all">
 <script>
 var Mon_Breakfast = "";
 function allowDrop(ev) {
@@ -39,13 +40,14 @@ function drop(ev) {
     vertical-align:middle;
 }
 #div3 {
-    width: 52px;
-    height: 52px;
+    width: 54px;
+    height: 54px;
     padding: 10px;
-    border: 1px solid #aaaaaa;
+    border: 2px solid #FDBA13;
     text-align:center;
     vertical-align:middle;
     border-radius: 50%;
+    background-color:#F4F4F4;
 }
 #div4 {
     width: 50px;
@@ -101,6 +103,7 @@ function drop(ev) {
     height: 50px;
     padding: 10px;
     border: 1px solid #aaaaaa;
+    background-color:#F4F4F4;
 }
 #divCopy {
     padding: 10px;
@@ -116,9 +119,10 @@ function drop(ev) {
 }
 </style>
 </head>
-<body>
-
-<div class="w3-bar w3-orange w3-card-4">
+<body style='background-color:#FDBA13'>
+<div id='main'>
+<center><img src='logo-nav.png' style='margin:10px'></center>
+<div class="w3-bar w3-card-4" style='background-color:#FDBA13'>
   <button class="w3-bar-item w3-button" onclick="openDay('Mon')">Monday</button>
   <button class="w3-bar-item w3-button" onclick="openDay('Tue')">Tuesday</button>
   <button class="w3-bar-item w3-button" onclick="openDay('Wed')">Wednesday</button>
@@ -128,7 +132,7 @@ function drop(ev) {
 </div>
 
 <div id="Mon" class="w3-container day">
-<table border='0' width='100%' class='w3-card-4'>
+<table border='0' width='100%' class='w3-card-4' style='background-color:#F4F4F4'>
 	<tbody>
 		<tr>
 			<td width='100'>&nbsp;</td>
@@ -146,7 +150,7 @@ function drop(ev) {
 		</tr>
 		<tr>
 			<td colspan='5'>
-				<div class="w3-bar w3-orange w3-card-4">
+				<div class="w3-bar w3-card-4" style='background-color:#FDBA13'>
 					  <button class="w3-bar-item w3-button" onclick="monOpt('mon_A')">Breakfast</button>
 					  <button class="w3-bar-item w3-button" onclick="monOpt('mon_B')">Ultra-Clean</button>
 					  <button class="w3-bar-item w3-button" onclick="monOpt('mon_C')">Clean</button>
@@ -162,7 +166,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_01" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_01" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>1</span>
 										</div>
 									</div>
@@ -172,7 +176,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_2" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_2" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>2</span>
 										</div>
 									</div></td>
@@ -181,7 +185,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_3" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_3" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>3</span>
 										</div>
 									</div></td>
@@ -190,7 +194,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_4" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_4" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>4</span>
 										</div>
 									</div></td>
@@ -211,7 +215,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_5" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_5" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>5</span>
 										</div>
 									</div>
@@ -221,7 +225,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_6" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_6" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>6</span>
 										</div>
 									</div></td>
@@ -230,7 +234,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_7" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_7" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>7</span>
 										</div>
 									</div></td>
@@ -239,7 +243,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_8" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_8" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>8</span>
 										</div>
 									</div></td>
@@ -248,7 +252,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_9" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_9" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>9</span>
 										</div>
 									</div></td>
@@ -257,7 +261,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_10" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_10" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>10</span>
 										</div>
 									</div></td>
@@ -266,7 +270,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_11" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_11" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>11</span>
 										</div>
 									</div></td>
@@ -275,7 +279,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_12" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_12" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>12</span>
 										</div>
 									</div></td>
@@ -296,7 +300,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_13" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_13" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>13</span>
 										</div>
 									</div>
@@ -306,7 +310,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_14" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_14" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>14</span>
 										</div>
 									</div></td>
@@ -315,7 +319,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_15" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_15" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>15</span>
 										</div>
 									</div></td>
@@ -324,7 +328,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_16" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_16" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>16</span>
 										</div>
 									</div></td>
@@ -333,7 +337,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_17" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_17" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>17</span>
 										</div>
 									</div></td>
@@ -342,7 +346,7 @@ function drop(ev) {
 							<tr>
 								<td id='divDrop' align='center'>
 									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
-										<div id="mon_18" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+										<div id="mon_18" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">
 											<span style='vertical-align:-5px;'>18</span>
 										</div>
 									</div></td>
@@ -382,7 +386,7 @@ function drop(ev) {
   <h2>Saturday</h2>
   <p>Saturdays Stuff</p>
 </div>
-
+</div>
 <script>
 function openDay(dayName) {
     var i;
