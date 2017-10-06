@@ -3,19 +3,99 @@
 <head>
 <style>
 #div1 {
-    width: 350px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div2 {
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div3 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div4 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div5 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div6 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div7 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div8 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div9 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+
+#divDrop {
+    width: 50px;
+    height: 50px;
     padding: 10px;
     border: 1px solid #aaaaaa;
 }
-#div2 {
-    width: 350px;
-    height: 70px;
+#divCopy {
     padding: 10px;
     border: 1px solid #aaaaaa;
+}
+#divDay {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
 }
 </style>
 <script>
+var Mon_Breakfast = "";
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -28,20 +108,119 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
+    Mon_Breakfast = data;
 }
 </script>
 </head>
 <body>
+<center>
+<table border='0' width='60%'>
+	<tbody>
+		<tr>
+			<td width='100'>&nbsp;</td>
+			<td width='50' align='center'>Breakfast</td>
+			<td width='50' align='center'>Lunch</td>
+			<td width='50' align='center'>Dinner</td>
+			<td width='50' align='center'>Gain Only</td>
+		</tr>
+		<tr>
+			<td id='divDay'>Monday</td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+		</tr>
+		<tr>
+			<td colspan='5'>
+				<table border='0' width='100%'>
+					<tbody>
+						<tr>
+							<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"><div id="Breakfast_Monday_01" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">1</div></div></td>
+							<td id='divCopy'>Egg white frittata, Roasted cherry tomatoes, wilted spinach</td>
+						</tr>
+						<tr>
+							<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"><div id="drag02" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">2</div></div></td>
+							<td id='divCopy'>Natural Yoghurt, honey, protiend powder, mixed berries</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td id='divDay'>Tuesday</td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+		</tr>
+		<tr>
+			<td colspan='5'>
+				<table border='0' width='100%'>
+					<tbody>
+						<tr>
+							<td id='divDrop' align='center'>
+								<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+									<div id="Breakfast_Tues_01" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">1</div>
+								</div>
+							</td>
+							<td id='divCopy'>Egg white frittata, Roasted cherry tomatoes, wilted spinach</td>
+						</tr>
+						<tr>
+							<td id='divDrop' align='center'>
+								<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+									<div id="Breakfast_Tues_02" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">2</div>
+								</div>
+							</td>
+							<td id='divCopy'>Natural Yoghurt, honey, protiend powder, mixed berries</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<!--
 
 <p>Drag the W3Schools image into the rectangle:</p>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
-<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
-</div>
-<br />
 
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+
+<br>
+
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<div id="drag01" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">1</div>
+	<p>Egg white frittata, Roasted cherry tomatoes, wilted spinach</p>
+</div>
+<br /><br />
+
+<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<div id="drag02" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">2</div>
+</div>
+<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<div id="drag03" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">3</div>
+</div>
+<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<div id="drag04" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">4</div>
+</div>
+<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<div id="drag05" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">5</div>
+</div>
+<div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<div id="drag06" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">6</div>
+</div>
+<div id="div8" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<div id="drag07" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">7</div>
+</div>
+<div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<div id="drag08" draggable="true" ondragstart="drag(event)" style="width:50px;height:50px;border-radius:50%;background-color:#FDBA13;vertical-align:middle;text-align:center;font-family:arial;">8</div>
+</div>
+-->
 
 </body>
 </html>

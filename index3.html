@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+var Mon_Breakfast = "";
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+    Mon_Breakfast = data;
+}
+</script>
+<style>
+#div1 {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div2 {
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div3 {
+    width: 52px;
+    height: 52px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+    border-radius: 50%;
+}
+#div4 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div5 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div6 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div7 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div8 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+#div9 {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+
+#divDrop {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+#divCopy {
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+#divDay {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align:center;
+    vertical-align:middle;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-bar w3-orange">
+  <button class="w3-bar-item w3-button" onclick="openDay('Mon')">Monday</button>
+  <button class="w3-bar-item w3-button" onclick="openDay('Tue')">Tuesday</button>
+  <button class="w3-bar-item w3-button" onclick="openDay('Wed')">Wednesday</button>
+  <button class="w3-bar-item w3-button" onclick="openDay('Thu')">Thursday</button>
+  <button class="w3-bar-item w3-button" onclick="openDay('Fri')">Friday</button>
+  <button class="w3-bar-item w3-button" onclick="openDay('Sat')">Saturday</button>
+</div>
+
+<div id="Mon" class="w3-container day">
+<table border='0' width='100%'>
+	<tbody>
+		<tr>
+			<td width='100'>&nbsp;</td>
+			<td width='50' align='center'>Breakfast</td>
+			<td width='50' align='center'>Lunch</td>
+			<td width='50' align='center'>Dinner</td>
+			<td width='50' align='center'>Gain Only</td>
+		</tr>
+		<tr>
+			<td id='divDay'>Monday</td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+			<td id='divDrop' align='center'><div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+		</tr>
+		<tr>
+			<td colspan='5'>
+				<div class="w3-bar w3-orange">
+					  <button class="w3-bar-item w3-button" onclick="monOpt('mon_A')">Breakfast</button>
+					  <button class="w3-bar-item w3-button" onclick="monOpt('mon_B')">Ultra-Clean</button>
+					  <button class="w3-bar-item w3-button" onclick="monOpt('mon_C')">Clean</button>
+				</div>
+				<div id="mon_A" class="w3-container monOption" style="display:block">
+					<table border='0' width='100%'>
+						<tbody>
+							<tr>
+								<td id='divCopy' colspan='2'>
+									Breakfast
+								</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_01" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>1</span>
+										</div>
+									</div>
+								</td>
+								<td id='divCopy'>1) Egg white frittata, Roasted cherry tomatoes, wilted spinach</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_2" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>2</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>2) Natural Yoghurt, honey, protien powder, mixed berries</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_3" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>3</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>3) Chicken Sausages, Boiled Egg, Cherry Tomatoes and Spinach</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_4" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>4</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>4) Smoothie - Berrylicious</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div id="mon_B" class="w3-container monOption" style="display:none">
+					<table border='0' width='100%'>
+						<tbody>
+							<tr>
+								<td id='divCopy' colspan='2'>
+									Ultra-Clean
+								</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_5" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>5</span>
+										</div>
+									</div>
+								</td>
+								<td id='divCopy'>5) Sweet Potato Mash, Seasoned Chicken and Mixed Greens</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_6" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>6</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>6) Carrot & Swede Mash, Pan Seared Rump Steak and Mint Jelly Peas</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_7" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>7</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>7) Pan Seared Rump Steak, Spicy Rive and Crispy Brocolli</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_8" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>8</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>8) Pan Seared Steak, Carrot and Swede Mash and Wilted Greens</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_9" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>9</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>9) Chicken Marinated in Cajun Spices, White Rice, Mango Salsa and Spinach</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_10" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>10</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>10) Chicken Sausages, Sweet Potato Mash and Braised Red Cabbage/td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_11" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>11</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>11) Baked Seabass, Minted Peas and Sweet Potato Mash</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_12" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>12</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>12) Pulled Cajun Chicken, Appleslaw and Crispy Lettuce Wrap (Cold Option)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div id="mon_C" class="w3-container monOption" style="display:none">
+					<table border='0' width='100%'>
+						<tbody>
+							<tr>
+								<td id='divCopy' colspan='2'>
+									Clean
+								</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_13" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>13</span>
+										</div>
+									</div>
+								</td>
+								<td id='divCopy'>13) Basil Pesto Chicken, Whole Wheat Pasta, Spinach and Pine Nuts</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_14" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>14</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>14) Oven Baked Cod, Roasted New Potatoes and Samphire Salad</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_15" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>15</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>15) Chicken Sausages, Mixed Baked Beans in Tomato Sauce and Sweet Potato Mash</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_16" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>16</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>16) Sweet Chilli Chicken, Roasted Vegtables, Sweet Chilli Sauce and Whole Wheat Noodles</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_17" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>17</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>17)Roast Beef, Mixed Root Vetables, Greens and Roasted Sweet Potatoes</td>
+							</tr>
+							<tr>
+								<td id='divDrop' align='center'>
+									<div id='div3' ondrop="drop(event)" ondragover="allowDrop(event)">
+										<div id="mon_18" draggable="true" ondragstart="drag(event)" style="width:30px;height:30px;border-radius:50%;background-color:#FF9800;vertical-align:middle;text-align:center;font-family:arial;">
+											<span style='vertical-align:-5px;'>18</span>
+										</div>
+									</div></td>
+								<td id='divCopy'>18) Put of Africa Curry, Diced Beef, White Rice, Tomato Salsa and Banana</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div id="Tue" class="w3-container day" style="display:none">
+  <h2>Tuesday</h2>
+  <p>Tuesdays Stuff</p>
+</div>
+
+<div id="Wed" class="w3-container day" style="display:none">
+  <h2>Wednesday</h2>
+  <p>Wednesdays Stuff</p>
+</div>
+
+<div id="Thu" class="w3-container day" style="display:none">
+  <h2>Thursday</h2>
+  <p>Thursdays Stuff</p>
+</div>
+
+<div id="Fri" class="w3-container day" style="display:none">
+  <h2>Friday</h2>
+  <p>Fridays Stuff</p>
+</div>
+
+<div id="Sat" class="w3-container day" style="display:none">
+  <h2>Saturday</h2>
+  <p>Saturdays Stuff</p>
+</div>
+
+<script>
+function openDay(dayName) {
+    var i;
+    var x = document.getElementsByClassName("day");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    document.getElementById(dayName).style.display = "block";
+}
+function monOpt(dayOption) {
+    var i;
+    var x = document.getElementsByClassName("monOption");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    document.getElementById(dayOption).style.display = "block";
+}
+</script>
+
+</body>
+</html>
